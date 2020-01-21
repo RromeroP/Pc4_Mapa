@@ -75,12 +75,20 @@ body {
 .datos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 150px;
-    top: -170px;
+    top: -160px;
     right: -65px;
 }
 
+.datos p {
+    margin-bottom: 0;
+}
+
+.datos img {
+    height: 50px;
+    margin: 10px 0;
+}
 .datos * {
     flex-basis: 25%;
 }
