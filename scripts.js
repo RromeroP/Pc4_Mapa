@@ -16,6 +16,15 @@ $(document).ready(function () {
     //Animacion slideDown de los datos
     $(".circulo").click(function () {
 
+
+        //Accedemos al servidor json (No funciona)
+        $.ajax({
+            url: "http://localhost:3000"
+        }).then(function (data) {
+            $(".max").append(data.max);
+            $(".min").append(data.min);
+        });
+
         //Si otros datos estan abiertos, los esconde
         if ($(".datos").is(":visible")) {
             $(".datos").slideUp();

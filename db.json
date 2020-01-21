@@ -1,0 +1,42 @@
+{
+    "palma": [
+        {
+            "id": 10000000,
+            "max": "23",
+            "min": "16",
+            "weather": "Clear"
+        }
+    ],
+    "llucmajor": [
+        {
+            "id": 20000000,
+            "max": "6",
+            "min": "3",
+            "weather": "Rain"
+        }
+    ],
+    "inca": [
+        {
+            "id": 30000000,
+            "max": "19",
+            "min": "8",
+            "weather": "Clouds"
+        }
+    ],
+    "manacor": [
+        {
+            "id": 40000000,
+            "max": "27",
+            "min": "11",
+            "weather": "Clear"
+        }
+    ],
+    "arta": [
+        {
+            "id": 50000000,
+            "max": "13",
+            "min": "1",
+            "weather": "Rain"
+        }
+    ]
+}
