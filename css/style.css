@@ -57,8 +57,7 @@ body {
     margin-top: 220px;
 }
 
-.circulo .nombre {
-    /* visibility: hidden; */
+.circulo .nombre, .datos {
     width: 90px;
     background-color: white;
     border: 2px solid black;
@@ -73,10 +72,23 @@ body {
     font-weight: bold;
 }
 
-.circulo .nombre::after {
+.datos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 150px;
+    top: -170px;
+    right: -65px;
+}
+
+.datos * {
+    flex-basis: 25%;
+}
+
+.circulo .nombre::after, .datos::after {
     content: "";
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 50%;
     margin-left: -6px;
     border-width: 5px;
@@ -84,7 +96,7 @@ body {
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
-/* 
-.circulo:hover .nombre {
-    visibility: visible;
-} */
+
+.datos::after {
+    margin-left: -1px;
+}
