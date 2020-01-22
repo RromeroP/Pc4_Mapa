@@ -15,14 +15,18 @@ $(document).ready(function () {
 
     //Animacion slideDown de los datos
     $(".circulo").click(function () {
+        var this_div = $(this).find("div");
+        var index = this_div.attr("id");
 
-
-        //Accedemos al servidor json (No funciona)
+        //Accedemos al servidor json
         $.ajax({
-            url: "http://localhost:3000"
+            url: "http://localhost:3000/ciudad"
         }).then(function (data) {
-            $(".max").append(data.max);
-            $(".min").append(data.min);
+            //Accedemos a los datos que necesitamos
+            this_div.find(".name").html(data[index].name);
+            this_div.find(".max").html(data[index].max + "Cº");
+            this_div.find(".min").html(data[index].min + "Cº");
+            this_div.find(".imagenes").attr("src", "img/" + data[index].weather + ".png");
         });
 
         //Si otros datos estan abiertos, los esconde
@@ -30,7 +34,7 @@ $(document).ready(function () {
             $(".datos").slideUp();
         }
 
-        $(this).find(".datos").stop().slideDown();
+        $(this).find(".datos").stop().slideDown(1500,"swing");
         event.stopPropagation();
     });
 
