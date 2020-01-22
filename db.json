@@ -2,38 +2,70 @@
     "ciudad": [
         {
             "name": "Palma",
-            "id": 10000000,
-            "max": "23",
-            "min": "16",
-            "weather": "Clear"
+            "id": 6533961,
+            "main": {
+                "temp_max": "296",
+                "temp_min": "288"
+            },
+            "weather": [
+                {
+                    "main": "Clear"
+                }
+            ]
         },
         {
             "name": "Llucmajor",
-            "id": 20000000,
-            "max": "6",
-            "min": "3",
-            "weather": "Rain"
+            "id": 6533952,
+            "main": {
+                "temp_max": "279",
+                "temp_min": "276"
+            },
+            "weather": [
+                {
+                    "main": "Rain"
+                }
+            ]
         },
         {
             "name": "Inca",
-            "id": 30000000,
-            "max": "19",
-            "min": "8",
-            "weather": "Clouds"
+            "id": 6533948,
+            "main": {
+                "temp_max": "292",
+                "temp_min": "285"
+            },
+            "weather": [
+                {
+                    "main": "Clouds"
+                }
+            ]
         },
         {
             "name": "Manacor",
-            "id": 40000000,
-            "max": "27",
-            "min": "11",
-            "weather": "Clear"
+            "id": 6533954,
+            "main": {
+                "temp_max": "299",
+                "temp_min": "287"
+            },
+            "weather": [
+                {
+                    "main": "Clear"
+                }
+            ]
         },
         {
             "name": "Artà",
-            "id": 50000000,
+            "id": 2521534,
             "max": "13",
             "min": "1",
-            "weather": "Rain"
+            "main": {
+                "temp_max": "284",
+                "temp_min": "274"
+            },
+            "weather": [
+                {
+                    "main": "Rain"
+                }
+            ]
         }
     ]
 }
